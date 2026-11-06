@@ -1,0 +1,192 @@
+/* Customized Bootstrap Styles for this template
+-- Styles start with smallest (phone size) and go up to largest
+-- media queries should use min-width since we're going from smallest to largest
+*/
+
+/* initial styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+}
+
+.container {
+	margin-top:  0;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.sidebar-nav .navbar-header {
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.navbar-default {
+	width: 100%;
+}
+
+.navbar-default .navbar-nav li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+.navbar-nav li a,
+.navbar-default .navbar-nav>li>a,
+.navbar-nav li a:visited,
+.navbar-nav li a:hover,
+.navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.navbar-nav li a.activenav,
+.navbar-nav li a.activenav:visited,
+.navbar-nav li a.activenav:focus,
+.navbar-nav li a.activenav:hover,
+.navbar-nav li a.activenav:active {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-decoration: none;
+}
+
+div.row.footer {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1em .5em;
+	text-align: left;
+	font-size: 1em;
+	font-size: .9em;
+}
+
+footer a {
+	text-decoration: none;
+	text-align: left;
+}
+
+@media (min-width: 320px) {
+
+	div.row.footer {
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.navbar-default .navbar-nav li {
+		font-size: 1.3em;
+	}
+	
+	.sidebar-nav .navbar-header {
+		margin-left: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+		
+}
+
+@media (min-width: 640px) {
+	.sidebar-nav .navbar-header {
+		width: 98.5%;
+	}
+	
+	
+}
+
+/* devices 768px and larger */
+@media (min-width: 768px) {
+
+	.container-fluid { /* remove padding for larger viewports */
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	footer .col-sm-9 {
+		min-width: 52%;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	/* make sidebar nav vertical left side */
+	.navbar {
+		margin-right: 3px;
+		margin-bottom: 0;
+		padding-bottom: 2em;
+	}
+
+	.sidebar-nav .navbar .navbar-collapse {
+		padding: 0;
+		padding-left: 0;
+		max-height: none;
+		margin-left: 0;
+		width: 240px;
+	}
+
+	.sidebar-nav .navbar-header {
+		float: none;
+	}
+
+	.sidebar-nav .navbar ul {
+		float: left;
+	}
+
+	.sidebar-nav .navbar li {
+		float: left;
+		display: block;
+		margin-left: 3px;
+		margin-right: 0;
+		padding: 3px 0 1px 0;
+		width: 96%;
+		font-size: 1.1em;
+	}
+
+	.sidebar-nav .navbar li a {
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-right: 0;
+		width: 100%;
+		text-decoration: none;
+	}
+
+	.navbar-default {
+		width: 98%;
+		border: none;
+	}
+
+	/* uncomment if you would like the menu to be fixed */
+	/* .navbar {
+		position: fixed;
+		width: 170px;
+		z-index: 2;
+	} */
+	/* END left vertical nav */
+
+}
+
+@media (min-width: 990px) {
+
+	.navbar {
+		width: 210px;
+	}
+	
+	.sidebar-nav .navbar li a {
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+		width: 210px;
+	}
+
+}
+
+@media (min-width: 1664px) {
+}

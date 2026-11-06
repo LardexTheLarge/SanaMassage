@@ -1,0 +1,865 @@
+/* Template styles (not custom bootstrap styles)
+-- Styles start with smallest (320px) and go up to largest (so media queries should use min-width)
+-- colors are set in individual color css files  */
+
+/* general styles - apply to all viewport sizes */
+.main-header {
+  max-width: 100%;
+  margin-right: 0;
+  padding: 1em 0 0 0;
+}
+
+#member-logo {
+  max-width: 100px;
+  clear: none;
+  float: left;
+  font-weight: normal;
+  margin: 0 0.75em 1em 0;
+}
+
+#business {
+  line-height: 0.7em;
+  padding: 5px 0 10px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+
+#tagline {
+  clear: both;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.5em;
+  line-height: 1em;
+}
+
+.main-background {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.central-container {
+  padding: 0.5em 0;
+  margin-top: 0;
+}
+
+.central-content {
+  width: 100%;
+}
+
+.central-content ul li {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.central-content .gift-cert-button {
+  margin-top: 1em;
+}
+
+.title-social-wrapper {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.title {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.social-right {
+  float: right;
+  clear: none;
+  text-align: right;
+  max-width: 100%;
+}
+
+.social-right a img {
+  float: right;
+  display: inline;
+  padding-left: 1em;
+}
+
+.specials-box img {
+  margin: 0.5em;
+}
+
+.social-tagline {
+  margin: 1em 0;
+}
+
+.social-footer {
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+}
+
+.social-footer a img,
+.social-menu a img,
+.social-menu-mobi a img,
+.social-tagline a img {
+  padding-right: 0.5em;
+}
+
+.divider-bar {
+  margin: 0 1em;
+}
+
+.copyright {
+  clear: both;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.table-responsive {
+  /* this only works for 768px and smaller */
+  width: auto;
+  max-width: 100%;
+  margin-top: 1em;
+  clear: both;
+  border: 1px solid transparent; /* override bootstrap's border around responsive tables */
+}
+
+@-moz-document url-prefix() {
+  /* fix responsive table rendering in Firefox */
+  fieldset {
+    display: table-cell;
+  }
+}
+
+table.hours-and-scheduling {
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: auto;
+  clear: both;
+  border-bottom: 1px solid #ddd;
+}
+
+table.services-and-rates {
+  border-bottom: 1px solid #ddd;
+}
+
+#pac-webbuilder-contact .form-wrapper {
+  padding-top: 1.5em;
+}
+
+#pac-webbuilder-contact label {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#pac-webbuilder-contact select,
+#pac-webbuilder-contact input,
+#pac-webbuilder-contact textarea {
+  float: left;
+  margin-bottom: 1em;
+}
+
+#pac-webbuilder-contact textarea {
+  max-width: 60%;
+}
+
+#edit-contact-email,
+#edit-contact-comment {
+  max-width: 98%;
+}
+
+#pac-webbuilder-contact legend {
+  display: none;
+}
+
+#pac-webbuilder-contact input[type="submit"] {
+  max-width: 5em;
+  clear: both;
+}
+
+.bodysense-block {
+  clear: both;
+  display: block;
+  float: left;
+  margin-bottom: 2em;
+}
+
+.bodysense-block img {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+#googmap {
+  overflow: hidden; /* keeps map content within the div */
+}
+
+#recaptcha_area {
+  display: -moz-inline-box; /* this keeps the captcha in place in firefox */
+  clear: both;
+  display: -moz-inline-box; /* this keeps the captcha from dipslaying in the upper right corner in firefox */
+  float: left;
+}
+
+a#opengallery {
+  margin-bottom: 1em;
+}
+
+a#opengallery img {
+  max-width: 80%;
+  margin-top: 1em;
+}
+
+fieldset {
+  min-width: 1px; /* bootstrap has it set to 0, but this is breaking the contact form */
+}
+
+.video-responsive {
+  max-width: 100%;
+}
+
+.video-responsive-iframe {
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* make images with inline height/width responsive */
+  .central-content img[style],
+  .central-content img {
+    max-width: 100% !important;
+    width: auto;
+    /*height: auto !important;*/ /* do not add back - it doesn't work right */
+    margin-right: 1em;
+  }
+
+  /* replacing comic-sans font with google fonts Short Stack on android and ios (see JS ) */
+  .replace-font-mobile {
+    font-family: "Short Stack" !important;
+    /*font-size: 85%;*/ /* this font is slightly larger than comic sans, so decrease size */
+  }
+}
+
+@media (min-width: 320px) {
+  /* iphone 5s */
+
+  .container-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .inner-header {
+    padding-top: 0.5em;
+    margin-top: 4em;
+  }
+
+  #member-logo {
+    float: right;
+    max-width: 100px;
+    clear: none;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+
+  /* #business will float left for small mobile sizes */
+  #business {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0;
+    line-height: 1em;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  /* #tagline will float left for small mobile sizes */
+  #tagline {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+  }
+
+  .main-background {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+
+  .central-container {
+    padding-right: 1em;
+    margin-top: 0;
+  }
+
+  .central-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 1em;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.75em;
+  }
+
+  .title h2 {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+
+  .central-content p {
+    clear: both;
+    font-size: 1.3em;
+  }
+
+  .central-content ul li {
+    font-size: 1.3em;
+  }
+
+  .social-tagline {
+    float: left;
+    clear: both;
+    padding-right: 0;
+    margin: 0 0 1em 0;
+  }
+
+  .social-menu {
+    display: none;
+  }
+
+  .social-menu-mobi {
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .social-footer {
+    margin-bottom: 0.5em;
+    width: auto;
+    text-align: center;
+  }
+
+  .social-footer a img,
+  .social-menu-mobi a img,
+  .social-tagline a img {
+    padding-left: 0.5em;
+  }
+
+  .specials-box-mobile {
+    clear: both;
+    padding: 5px 10px;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+  }
+
+  .specials-box-mobile img {
+    margin: 0.5em;
+  }
+
+  .main-background div.col-sm-3 {
+    clear: both;
+    width: 102%;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    border-right: none;
+  }
+
+  .main-background div.col-sm-9 {
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  div.col-sm-9 .inner-content-block {
+    clear: both;
+  }
+
+  div.col-sm-9.center-main-content {
+    width: 100%;
+  }
+
+  table.services-and-rates,
+  table.hours-and-scheduling {
+    font-size: 1.2em;
+  }
+
+  .abmp-logo-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img#abmp-logo,
+  #abmp-logo,
+  .specials-box {
+    display: none;
+  }
+
+  #abmp-logo a,
+  #abmp-logo-mobile a {
+    border: none;
+  }
+
+  #abmp-logo-mobile {
+    clear: both;
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+  }
+
+  .copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
+
+  #pac-webbuilder-contact {
+    margin-top: 1em;
+  }
+
+  #pac-webbuilder-contact label {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #pac-webbuilder-contact select,
+  #pac-webbuilder-contact input,
+  #pac-webbuilder-contact textarea {
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  #pac-webbuilder-contact textarea {
+    max-width: 100%;
+  }
+
+  #pac-webbuilder-contact #edit-contact-email,
+  #pac-webbuilder-contact #edit-contact-comment {
+    max-width: 100%;
+  }
+
+  #pac-webbuilder-contact legend {
+    display: none;
+  }
+
+  #recaptcha_area {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+
+  a#opengallery {
+    clear: none;
+    float: none;
+    margin-bottom: 2em;
+  }
+
+  #googmap {
+    overflow: hidden; /* keeps map content within the div */
+  }
+
+  .online-sched {
+    display: block;
+    float: left;
+    clear: none;
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 360px) {
+  /* Samsung Galaxy S4 portrait */
+  #business {
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 480px) {
+  /* HTC phone & iPhone 4 landscape */
+
+  #business {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  #tagline {
+    max-width: 100%;
+  }
+
+  #member-logo {
+    margin-right: 0;
+  }
+
+  #recaptcha_area {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  /* Nook, Kindle, Samsung Tab 7 portrait */
+  .main-header {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .inner-header {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #business {
+    margin-top: 0;
+    margin-left: 0;
+    width: 90%;
+    float: right;
+    text-align: right;
+  }
+
+  #tagline {
+    max-width: 78%;
+    clear: none;
+  }
+
+  .social-tagline {
+    margin-top: 0.5em;
+  }
+
+  #member-logo {
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  #pac-webbuilder-contact {
+    margin-top: 1em;
+  }
+
+  #pac-webbuilder-contact label {
+    width: 25%;
+  }
+
+  #pac-webbuilder-contact select,
+  #pac-webbuilder-contact input,
+  #pac-webbuilder-contact textarea {
+    float: left;
+    margin-bottom: 1em;
+  }
+
+  #pac-webbuilder-contact textarea {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* HP touchpad, iPad Mini portrait */ /* 770px = Samsung Note 10, Nexus 10, Kindle Fire portrait */
+
+  .main-header {
+    height: 250px;
+  }
+
+  .inner-header {
+    margin-top: 1em;
+  }
+
+  #business {
+    width: 85%;
+    margin-top: 0;
+  }
+
+  #member-logo {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  #tagline {
+    clear: none;
+    float: right;
+    text-align: right;
+    width: 100%;
+  }
+
+  .main-background {
+    margin-top: 20px;
+  }
+
+  .main-background div.col-sm-3 {
+    width: 240px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  .central-container {
+    width: 67%;
+    max-width: 100%;
+  }
+
+  .central-content {
+    padding-top: 0;
+    max-width: 100%;
+    margin-top: -19%;
+    font-size: 1.1em;
+  }
+
+  /* set the font size back to regular */
+  .central-content p,
+  .central-content ul li {
+    font-size: 1em;
+  }
+
+  div.col-sm-3.center-right-content {
+    width: 100%;
+  }
+
+  .title-social-wrapper {
+    max-width: 100%;
+  }
+
+  .social-tagline {
+    margin-top: -2em;
+    max-width: 75%;
+    float: right;
+    text-align: right;
+  }
+
+  .social-right {
+    margin-bottom: 0.5em;
+  }
+
+  .social-menu {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+  }
+
+  .social-menu-mobi {
+    display: none !important;
+  }
+
+  .social-tagline a,
+  .social-menu a,
+  .social-footer a {
+    display: inline;
+  }
+
+  .social-tagline a img,
+  .social-footer a img {
+    padding-right: 1em;
+  }
+
+  .social-menu a img {
+    padding-right: 1em;
+  }
+
+  #pac-webbuilder-contact label {
+    width: 30%;
+  }
+
+  .specials-box-mobile {
+    width: 100%; /* this is to leave room for the member logo on the right */
+    float: left;
+    font-size: 0.9em;
+  }
+
+  #abmp-logo-mobile {
+    clear: none;
+    float: right;
+    margin-top: 2em;
+  }
+
+  .table-responsive {
+    margin-bottom: 2em;
+  }
+
+  table.hours-and-scheduling {
+    float: left;
+    font-size: 1em;
+  }
+
+  #pac-webbuilder-contact select,
+  #pac-webbuilder-contact input,
+  #pac-webbuilder-contact textarea {
+    width: 60%;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-header {
+    min-height: 290px;
+  }
+
+  .main-background {
+    margin-top: 0;
+  }
+
+  .central-content {
+    padding-top: 3em;
+  }
+
+  .center-main-content {
+    width: 64%;
+    margin-top: 1em;
+  }
+
+  div.col-sm-3.center-right-content {
+    max-width: 30%;
+    clear: none;
+  }
+
+  div.col-sm-9.center-main-content {
+    width: 70%;
+    display: inline-block;
+  }
+
+  #abmp-logo-mobile {
+    display: none;
+  }
+
+  #abmp-logo {
+    display: block;
+    clear: both;
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .specials-box-mobile {
+    display: none;
+  }
+
+  .specials-box {
+    clear: both;
+    display: block;
+    float: right;
+    margin: 0 0 1em 2em;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.75em;
+    border: 1px solid #000;
+  }
+
+  .specials-box img {
+    margin: 0.5em;
+  }
+
+  a#opengallery {
+    clear: none;
+    float: none;
+  }
+
+  .table-responsive {
+    border: 1px solid transparent;
+    clear: none;
+  }
+
+  .central-content table {
+    clear: none;
+    width: auto;
+    max-width: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  table.hours-and-scheduling {
+    clear: none;
+    max-width: 100%;
+    margin-top: 0;
+    display: block;
+  }
+
+  .online-sched {
+    width: 100%;
+  }
+}
+
+@media (min-width: 990px) {
+  /* for larger than ipad or other tablets */
+  .container-inner {
+    width: 990px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-header {
+    width: 900px;
+    margin: auto;
+    min-height: 290px;
+  }
+
+  .inner-header {
+    float: right;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  #business {
+    padding-right: 0;
+  }
+
+  div.row.main-background {
+    width: 990px;
+    margin: auto;
+    margin-top: 0;
+  }
+
+  div.row.main-background div.col-sm-3 {
+    margin-top: 0;
+  }
+
+  .central-container {
+    width: 73%;
+    font-size: 1.2em;
+  }
+
+  .central-content {
+    margin-top: 0;
+    padding-bottom: 5em;
+    padding-right: 0;
+    margin-top: -18%;
+    font-size: 0.875em;
+  }
+
+  .social-tagline {
+    margin-top: -2em;
+    margin-left: 6em;
+  }
+
+  .replace-font-mobile {
+    font-family: "comic sans ms" !important;
+  }
+}
+
+@media (min-width: 1200px) {
+}
